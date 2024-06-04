@@ -6,8 +6,15 @@ body {
     background: #CCCCCC;
   }
 
+ #banner {
+    width: 100%; /* anchura de la imagen que ocupa el 100 % de la pantalla sea asi responsivo */
+ } 
+
 h1 {
-    text-align: center;
+    text-align: center;            /* Texto alineado al centro */
+    border: 10px solid #000000;  /*borde solido color negro */
+    padding: 20px; /*espacio interno de 20px para 4 cuadrantes: padding-bottom,padding-top,padding-left,padding-right */
+    margin: 40px;  /* espacio externo de 40px para 4 cuadrantes*/
 }  
 
 p {
