@@ -6,17 +6,24 @@ body {
     background: #CCCCCC;
   }
 
+h1 {
+    text-align: center;
+}  
 
 p {
     text-align: center;  
     /* background: #CCCCCC;  se elimina esta linea ya que se hace selector body */
-    
-  }
+
+}
 
   /* aplicar color para letra italica enfasis */
-  em strong {
+em strong {
     color: red;
-  }
+}
 
+/* llamar al id unico creado desde index.html con # y nombre del id */
+#mision {
+    font-size: 20px;
+}
 
 
