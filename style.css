@@ -33,4 +33,8 @@ em strong {
     font-size: 20px;
 }
 
+/* Llamar a la clase items con punto y nombre de la clase*/
+.items {
+    font-style: italic;
 
+}
