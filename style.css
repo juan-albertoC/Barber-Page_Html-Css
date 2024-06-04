@@ -2,9 +2,9 @@
 /* saltos de linea no se pintan, al analizar la estructura del index.html la etiqueta body contiene a h1 y parrafos p entonces hacer una regla de selector para body que pinte el fondo */
 
 
-body {   
-    
-  }
+.titulo-principal {
+    padding-left: 30px;
+}
 
  #banner {
     width: 100%; /* anchura de la imagen que ocupa el 100 % de la pantalla sea asi responsivo */
@@ -16,12 +16,16 @@ body {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;            /* Texto alineado al centro */
-    border: 10px solid #000000;  /*borde solido color negro */
-    padding: 20px; /*espacio interno de 20px para 4 cuadrantes: padding-bottom,padding-top,padding-left,padding-right */
-    margin: 40px;  /* espacio externo de 40px para 4 cuadrantes*/
-}  
+/* h1 {
+    text-align: center;             Texto alineado al centro 
+    border: 10px solid #000000;  borde solido color negro 
+    padding: 20px;  espacio interno de 20px para 4 cuadrantes: padding-bottom,padding-top,padding-left,padding-right 
+    margin: 40px;   espacio externo de 40px para 4 cuadrantes
+}*/
+
+.titulo-centralizado {
+  text-align: center;       /*aplicable para h2 y h3 */
+}
 
 p {
     text-align: center;  
@@ -47,10 +51,7 @@ em strong {
 }
 
 
-/*verificar en index donde esta ubicado la etiqueta h2 para poder aplicar estilo */
-h2 {
-    text-align: center;
-}
+
 
 /* Llamar a la clase items con punto y nombre de la clase*/
 .items {
