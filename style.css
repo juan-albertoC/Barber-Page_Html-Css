@@ -3,12 +3,17 @@
 
 
 body {   
-    background: #CCCCCC;
+    
   }
 
  #banner {
     width: 100%; /* anchura de la imagen que ocupa el 100 % de la pantalla sea asi responsivo */
  } 
+
+ /* reutilizar estilo con la clase .principal */
+.principal {
+    background: #CCCCCC;
+}
 
 h1 {
     text-align: center;            /* Texto alineado al centro */
@@ -33,8 +38,21 @@ em strong {
     font-size: 20px;
 }
 
+
+/* reutilizar estilo con la clase .diferenciales */
+.diferenciales {
+    background: #FFFFFF;
+}
+
+
+/*verificar en index donde esta ubicado la etiqueta h2 para poder aplicar estilo */
+h2 {
+    text-align: center;
+}
+
 /* Llamar a la clase items con punto y nombre de la clase*/
 .items {
     font-style: italic;
 
 }
+
