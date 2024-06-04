@@ -13,6 +13,7 @@ body {
  /* reutilizar estilo con la clase .principal */
 .principal {
     background: #CCCCCC;
+    padding: 20px;
 }
 
 h1 {
@@ -42,6 +43,7 @@ em strong {
 /* reutilizar estilo con la clase .diferenciales */
 .diferenciales {
     background: #FFFFFF;
+    padding: 30px;/* espacio interno */
 }
 
 
@@ -55,4 +57,21 @@ h2 {
     font-style: italic;
 
 }
+
+/* la lista <ul> por defecto es block que cada item <li> hacen un salto de linea crean una linea ocupan asi todo el espacio de pantalla */
+/* La propiedad de <ul> block se puede modificar*/
+ul {
+
+    display: inline-block;  /*ocupe solo el espacio de su contenido y 4 espacios bottom, top, left, right se puedan ajustar  */
+    vertical-align: top; /* para que imagen no se ajuste con la ultima item, sino despues de todos los items*/
+    margin-right: 15%;/*hacer espacio derecho entre la lista y la imagen */
+    width: 20%; /* ajustar tamaño mayor a la imagen este mas a la derecha */
+    
+}
+
+/* Ajuste de imagen */
+.imagenDiferenciales {
+    width: 50%;
+}
+
 
