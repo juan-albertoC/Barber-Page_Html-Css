@@ -1,6 +1,22 @@
-p{
+/* selectores css  */
+/* saltos de linea no se pintan, al analizar la estructura del index.html la etiqueta body contiene a h1 y parrafos p entonces hacer una regla de selector para body que pinte el fondo */
+
+
+body {   
+    background: #CCCCCC;
+  }
+
+
+p {
     text-align: center;  
+    /* background: #CCCCCC;  se elimina esta linea ya que se hace selector body */
     
   }
 
-  
+  /* aplicar color para letra italica enfasis */
+  em strong {
+    color: red;
+  }
+
+
+
