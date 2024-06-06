@@ -1,0 +1,19 @@
+header {
+    background-color: #BBBBBB;
+}
+
+nav li {
+    /*anterior se vio que listas tiene default display block items ocupa 100% espacio de pagina, configurar comportamiento inline con tamaño de su contenido */
+    display: inline;    /* navegacion horizontal */
+    margin: 0 0 0 15px; /*margen interno que separa entre las letras HOME PRODUCTOS CONTACTO en 4 cuadrantes bottom:0px, top:0px, right:0px, left:15px */
+    
+}
+
+/* configurar vinculo ancora etiqueta <a> */
+nav a {
+    text-transform: uppercase;  /* letras mayusculas*/
+    color: #000000;
+    font-weight: bold;         /* negrito */
+    font-size: 22px;           /* tamaño de pagina */
+    text-decoration: none;     /*retirar subrayado por defecto de vinculos */
+}
