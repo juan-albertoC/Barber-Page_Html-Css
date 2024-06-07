@@ -37,3 +37,36 @@ nav a {
     font-size: 22px;           /* tamaño de pagina */
     text-decoration: none;     /*retirar subrayado por defecto de vinculos */
 }
+
+.productos {
+    /* misma tecnica de clase .caja*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px; /*espacio entre el header y el main */
+}
+
+.productos li {
+    /*todos aquellos items de la lista */
+    display: inline-block;  /* colocar elemntos de forma horizontal para configurar tamaños y espacios*/
+    text-align: center; /*elemtos centrados  */
+    /*distribuir separar cada uno de los elementos, debe tener tamaño ancho igual a 3 elemntos */
+    width: 30%;  /* ocupe 1/3=30 del espacio para cada elemento se tiene un 90 para los 3 elemtos, el resto de 10% distriuir entre los espacios de cada uno de los elemntos */
+    vertical-align: top;  /*una alineacion vertical de los elementos */
+}
+
+.productos h2 {
+    /* encabezado h2 letras*/
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.producto-descripcion {
+   font-size: 18px;
+}
+
+.producto-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;  /*separa el precio con la descripcion */
+}
