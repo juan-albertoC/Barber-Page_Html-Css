@@ -1,6 +1,26 @@
+/* Juan Alberto Cuevas Juarez 06/06/2024 estilos para productos.css */
+
 header {
     background-color: #BBBBBB;
+    padding: 20px 0; /* espacio interno de 20px para bottom and top y 0px para laterales */
 }
+
+/* clase .caja para Logo y menu de navegacion donde se encapsulan y puedan centrarse*/
+.caja {
+    width: 940px;        /* un 70% de ancho para logo y menu de un total de 1280px formato*/
+    position: relative;  /*por default su position: static cambiar a relative para centrar ambos elementos */
+    margin: 0 auto;      /* buttom and top 0  y automatico para bordes*/
+    /* auto porque 940px de ancho, entonces calcular de derecha a izq en funcion de resolucion cuanto colocar a la izquierda y drecha asi centrar */
+}
+
+
+nav {
+    position: absolute; /* la navegacion de estar debajo del logo.png cambia de posicion a la izquierda */
+    top: 110px;   /*logo.png del header tiene 250px de alto, calcular cuanto px debe tener asi estar a la mitad */
+    right: 0;
+}
+
+
 
 nav li {
     /*anterior se vio que listas tiene default display block items ocupa 100% espacio de pagina, configurar comportamiento inline con tamaño de su contenido */
