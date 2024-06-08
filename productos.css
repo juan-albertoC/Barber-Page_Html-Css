@@ -40,18 +40,25 @@ nav a {
 
 .productos {
     /* misma tecnica de clase .caja*/
-    width: 940px;
+    width: 940px;  /*definir que todos los productos ocupen 940px */
     margin: 0 auto;
     padding: 50px; /*espacio entre el header y el main */
 }
 
+/* Calculos*/
 .productos li {
     /*todos aquellos items de la lista */
     display: inline-block;  /* colocar elemntos de forma horizontal para configurar tamaños y espacios*/
     text-align: center; /*elemtos centrados  */
     /*distribuir separar cada uno de los elementos, debe tener tamaño ancho igual a 3 elemntos */
     width: 30%;  /* ocupe 1/3=30 del espacio para cada elemento se tiene un 90 para los 3 elemtos, el resto de 10% distriuir entre los espacios de cada uno de los elemntos */
+    /*90% de espacio de los 940px */
     vertical-align: top;  /*una alineacion vertical de los elementos */
+    /*background: #CCCCCC; */  /*color de cada elemento sirve como test para visualizar los errores y configuraciones */
+    margin: 0 1.5%;          /*margen externo lateral,  espacio de 2 laterales de 1.5 para cada item, entonces 1.5 x 6 = 9 + 90% = 99% de espacio que esta ocupando de los 940px */ 
+    padding: 30px 20px; /* separacion 30px vertical y 20px horizontal del elemento imagen con respecto a el encabezado h2, descripcion y precio */
+    /*con padding: 30px 20px sobrepasa los 940px que se definio, donde se pasa del 99% de espaacio*/
+    box-sizing: border-box; /*el borde cada item sera el limite de espacio que va a hacer definido, es decir que los 20px de padding de espacio interno no van a sobrepasar el 30% de width de ancho van a formar parte del 30%*/
 }
 
 .productos h2 {
