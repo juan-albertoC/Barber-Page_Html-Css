@@ -80,11 +80,25 @@ nav a:hover {    /*hover captura movimiento del maouse, encima del panel navegac
 
 }
 
+.productos li:hover {
+    border-color:#c78c19;
+    
+}
+
+/*evento de elemento activo o click del mouse */
+.productos li:active{
+    border-color: #088c19;
+}
+
 .productos h2 {
     /* encabezado h2 letras*/
     font-size: 30px;
     font-weight: bold;
 
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
 }
 
 .producto-descripcion {
