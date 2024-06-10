@@ -38,6 +38,13 @@ nav a {
     text-decoration: none;     /*retirar subrayado por defecto de vinculos */
 }
 
+/*capturar eventos y en funcion de ello ejecutar alguna cosa */
+nav a:hover {    /*hover captura movimiento del maouse, encima del panel navegacion */
+    color: #c78c19;/* color*/
+    text-decoration: underline;
+
+ }
+
 .productos {
     /* misma tecnica de clase .caja*/
     width: 940px;  /*definir que todos los productos ocupen 940px */
@@ -89,3 +96,4 @@ nav a {
   font-weight: bold;
   margin-top: 10px;  /*separa el precio con la descripcion */
 }
+
