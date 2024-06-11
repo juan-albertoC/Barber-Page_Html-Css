@@ -111,3 +111,14 @@ nav a:hover {    /*hover captura movimiento del maouse, encima del panel navegac
   margin-top: 10px;  /*separa el precio con la descripcion */
 }
 
+footer {
+    text-align: center; /* alinea el texto al centro*/
+    background: url(imagenes/bg.jpg); /* utilizar opcion de url para agregar una imagen de fondo gris con background hace repeticiones ocupa toda pantalla */
+    padding: 40px; /* espacio interno del footer 4 cuadrantes */
+}
+
+.copyright {
+    color: #FFFFFF;  /*color */
+    font-size: 13px;   /* disminuir su tamaño original que por defecto es de 16px*/
+    margin: 20px;
+}
