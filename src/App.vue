@@ -1,11 +1,45 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <header>
+    <h1 class="titulo-principal">Barbería Alura</h1>
+  </header>
+
+  <img id="banner" src="./assets/banner/banner.jpg" alt="Banner">
+
+  <div class="principal">
+    <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
+
+    <p>
+      Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong>
+      trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020,
+      la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.
+    </p>
+
+    <p id="mision">
+      <em>
+        Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.
+      </em>
+    </p>
+
+    <p>
+      Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda,
+      para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad,
+      garantizando calidad y satisfacción de nuestros clientes.
+    </p>
+  </div>
+
+  <div class="diferenciales">
+    <h3 class="titulo-centralizado">Diferenciales</h3>
+    <ul>
+      <li class="items">Atención personalizada</li>
+      <li class="items">Espacio diferenciado</li>
+      <li class="items">Localización</li>
+      <li class="items">Profesionales calificados</li>
+    </ul>
+
+    <img src="./assets/diferenciales/diferenciales.jpg" class="imagenDiferenciales" alt="Diferenciales">
+  </div>
 </template>
 
 <style scoped></style>
