@@ -1,58 +1,38 @@
 <template>
   <div>
-    <header>
-      <div class="caja">
-        <h1><img src="/imagenes/logo.png" alt="Logo Barbería Alura" /></h1>
-        <nav>
-          <ul>
-            <li><RouterLink to="/">Home</RouterLink></li>
-            <li><RouterLink to="/productos">Productos</RouterLink></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <HeaderNav />
 
     <main>
       <ul class="productos">
-        <li>
-          <h2>Cabello</h2>
-          <img src="/imagenes/cabello.jpg" alt="Corte de cabello" />
-          <p class="producto-descripcion">
-            Con tijera o máquina, a gusto del cliente
-          </p>
-          <p class="producto-precio">$ 10.00</p>
-        </li>
-        <li>
-          <h2>Barba</h2>
-          <img src="/imagenes/barba.jpg" alt="Diseño de barba" />
-          <p class="producto-descripcion">
-            Corte y diseño profesional de barba
-          </p>
-          <p class="producto-precio">$ 08.00</p>
-        </li>
-        <li>
-          <h2>Cabello + Barba</h2>
-          <img src="/imagenes/cabello+barba.jpg" alt="Cabello y barba" />
-          <p class="producto-descripcion">
-            Paquete completo de cabello y barba
-          </p>
-          <p class="producto-precio">$ 15.00</p>
-        </li>
+        <ProductItem
+          title="Cabello"
+          image="/imagenes/cabello.jpg"
+          description="Con tijera o máquina, a gusto del cliente"
+          price="$10.00"
+        />
+        <ProductItem
+          title="Barba"
+          image="/imagenes/barba.jpg"
+          description="Corte y diseño profesional de barba"
+          price="$8.00"
+        />
+        <ProductItem
+          title="Cabello + Barba"
+          image="/imagenes/cabello+barba.jpg"
+          description="Paquete completo de cabello y barba"
+          price="$15.00"
+        />
       </ul>
     </main>
 
-    <footer>
-      <img src="/imagenes/logo-blanco.png" alt="Logo blanco Barbería Alura" />
-      <p class="copyright">
-        &copy; Copyright Barbería Alura - 2020
-      </p>
-    </footer>
+    <FooterBar />
   </div>
 </template>
 
 <script setup>
-// Este componente no necesita lógica aún
+   import HeaderNav from '../components/HeaderNav.vue'
+   import ProductItem from '../components/ProductItem.vue'
+   import FooterBar from '../components/FooterBar.vue'
 </script>
 
 <style scoped>
